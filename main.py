@@ -8,7 +8,6 @@ import db
 templates = Jinja2Templates(directory="template")
 app = FastAPI()
 
-
 class ConnectRepository():
     def __init__(self):
         self.activeConnectons: List[(WebSocket, str)] = []
